@@ -30,4 +30,12 @@ botaoFonte.addEventListener('click', () => {
 })
 
 // #4
+const select = document.getElementById('imagem-select');
+const imagemCartao = document.getElementById('cartao-img');
+
+select.addEventListener('change', () => {
+    const novoIcone = select.value;
+    imagemCartao.setAttribute('src', novoIcone);
+    Option
+})
 
