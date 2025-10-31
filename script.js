@@ -23,5 +23,11 @@ botaoVerde.addEventListener('click', () => {
 })
 
 // #3
+const botaoFonte = document.getElementById('btn-fonte');
 
+botaoFonte.addEventListener('click', () => {
+    cartao.classList.toggle('fonte-alternativa');
+})
+
+// #4
 
