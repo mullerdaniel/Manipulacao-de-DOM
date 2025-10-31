@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM - Cartão Interativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="controles">
+      <h2>Personalize seu Cartão</h2>
+
+      <label for="nome-input">Seu Nome:</label>
+      <input type="text" id="nome-input" placeholder="Digite seu nome aqui">
+
+      <label>Cor de Fundo:</label>
+      <button id="btn-azul" class="btn-cor">Azul</button>
+      <button id="btn-verde" class="btn-cor">Verde</button>
+
+      <label>Estilo da Fonte:</label>
+      <button id="btn-fonte">Alternar Fonte</button>
+
+      <label for="imagem-select">Escolha um Ícone:</label>
+      <select id="imagem-select">
+        <option value="icones/dev.png">Desenvolvedor(a)</option>
+        <option value="icones/designer.png">Designer</option>
+      </select>
+
+      <label>Adicionar Habilidade:</label>
+      <input type="text" id="habilidade-input" placeholder="Ex: HTML5">
+      <button id="btn-adicionar">Adicionar</button>
+    </div>
+
+    <div class="cartao-container">
+      <div id="cartao" class="cartao">
+        <img id="cartao-img" src="icones/dev.png" alt="Ícone Profissão">
+        <h3 id="cartao-nome">Seu Nome</h3>
+        <ul id="lista-habilidades">
+          <li>JavaScript</li>
+          <li>DOM</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
