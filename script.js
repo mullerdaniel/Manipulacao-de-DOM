@@ -36,6 +36,26 @@ const imagemCartao = document.getElementById('cartao-img');
 select.addEventListener('change', () => {
     const novoIcone = select.value;
     imagemCartao.setAttribute('src', novoIcone);
-    Option
-})
+});
+
+// #5
+const habilidade = document.getElementById('habilidade-input');
+const botaoAdicionar = document.getElementById('btn-adicionar');
+const listaHabilidade = document.getElementById('lista-habilidades');
+
+botaoAdicionar.addEventListener('click', () => {
+    
+    const habilidadeTexto = habilidade.value.trim();
+
+    if (habilidadeTexto) {
+        
+        const novoItem = document.createElement('li');
+
+        novoItem.textContent = habilidadeTexto;
+        
+        listaHabilidade.appendChild(novoItem);
+
+        habilidade.value = '';
+    }
+});
 
